@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 function PeopleListItem(props) {
     const { person } = props;
-    console.log(person);
 
     return (
         <li>

@@ -16,7 +16,7 @@ function HireForm(props) {
         setHiredPeople([...hiredPeople, newPerson]);
         navigate("/dashboard", { replace: true });
     }
-    console.log(person);
+ 
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor="wage">Wage Offer</label>
