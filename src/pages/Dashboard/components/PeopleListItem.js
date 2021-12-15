@@ -11,7 +11,19 @@ function PeopleListItem(props) {
                 </Link>
             </h3>
 
-            {person.wage && <p>Wage: £{person.wage}</p>}
+            {person.wage && (
+                <>
+                    <p>Wage: £{person.wage}</p>
+                    <p>
+                        <Link
+                            to={`/view/${person.login.uuid}`}
+                            state={{ person }}
+                        >
+                            Edit Wage
+                        </Link>
+                    </p>
+                </>
+            )}
         </li>
     );
 }
